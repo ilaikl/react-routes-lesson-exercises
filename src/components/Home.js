@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 import '../styles/home.css'
 
@@ -16,8 +17,9 @@ class Home extends Component {
 
                 <div id="home-container">
                     <div id="world"><span className="main-directory-text">World</span></div>
-                    <div id="wizards"><span className="main-directory-text">Wizards</span></div>
-                    <div id="bestiary"><span className="main-directory-text">Bestiary</span></div>
+                    
+            <div id="wizards"><Link to="/directory/wizards"><span className="main-directory-text">Wizards</span></Link></div>
+            <div id="bestiary"><Link to="/directory/bestiary"><span className="main-directory-text">Bestiary</span></Link></div>
                     <div id="potions"><span className="main-directory-text">Potions</span></div>
                     <div id="deities"><span className="main-directory-text">Deities</span></div>
                 </div>
